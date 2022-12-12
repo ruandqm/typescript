@@ -1,0 +1,26 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Part of flit front end web development course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruandqm/typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruandqm/typescript/issues"
+  },
+  "homepage": "https://github.com/ruandqm/typescript#readme",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "npm": "^9.2.0",
+    "typescript": "^4.9.4"
+  }
+}
