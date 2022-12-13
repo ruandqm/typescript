@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: linear-gradient(to right, #f43d69, #8245c7);
+}
+
+.container {
+    height: 100vh;
+    background-image: url(./img/topography.svg);
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+}
+
+.navItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navItems>li {
+    flex: 0 0 12em;
+    background-color: #ffc600;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.8em;
+    /*  margin: calc(3% / 4); */
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+}

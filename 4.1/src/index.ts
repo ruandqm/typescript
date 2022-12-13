@@ -1,5 +1,5 @@
 function readLocalStorage() {
-    const storageData = JSON.parse(window.localStorage.getItem('car'))
+    const storageData = JSON.parse(window.localStorage.getItem('car')!)
     return (storageData)
 }
 
@@ -17,7 +17,7 @@ function getFormData() {
     const year = document.getElementById('year') as HTMLInputElement
     const color = document.getElementById('color') as HTMLInputElement
 
-    let automatic: boolean
+    let automatic: boolean = true
 
     if ((document.getElementById('yes') as HTMLInputElement).checked) {
         automatic = true
@@ -36,7 +36,7 @@ function getFormData() {
     addCar(car)
 }
 
-function addCar(car) {
+function addCar(car: object) {
     let cars = readLocalStorage()
     if (!cars) {
         cars = []
