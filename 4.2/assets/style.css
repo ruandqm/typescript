@@ -28,18 +28,124 @@ main {
 }
 
 .navItems>li {
-    flex: 0 0 12em;
+    flex: 0 0 17vw;
     background-color: #ffc600;
     font-size: 1.2em;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     padding: 0.8em;
-    /*  margin: calc(3% / 4); */
+    margin: 1em 0;
 }
 
-@media screen and (max-width: 600px) {
+.highlights {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-areas: "banner price1"
+        "banner price2";
+    gap: 1em;
+}
+
+.highlights>img {
+    width: 50vw;
+}
+
+.highlights>article {
+    background-color: #ffc600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resources>article {
+    background-color: #fff;
+    padding: 5em 2em;
+    flex: 0 0 22vw;
+    margin: 2em 0;
+}
+
+.taco {
+    background-color: #fff;
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taco>img {
+    width: 20vw;
+    margin-right: 3em
+}
+
+.description>h2 {
+    font-size: 3em;
+}
+
+.description>button {
+    padding: 1em;
+    font-size: 1.2em;
+    background-color: #ffc600;
+    margin-top: 1em;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.gallery {
+    display: grid;
+    margin: 1em auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.gallery>img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    .taco>img {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gallery>img {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .highlights>img {
+        width: 90vw;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4fr 2fr;
+        grid-template-areas: "banner banner"
+            "price1 price2";
+    }
+}
+
+@media screen and (max-width: 700px) {
     body {
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    .taco>img {
+        width: 40vw;
     }
 }
